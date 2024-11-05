@@ -136,7 +136,7 @@ const DatasetConfig: React.FC = () => {
 
     try {
       const response = await axios.post(
-        'http://localhost:8000/api/generate_synthetic_data/',
+         `${process.env.REACT_APP_API_URL}/generate_synthetic_data/`,
         { schema, num_rows: numRows },
         {
           responseType: 'blob',
