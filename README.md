@@ -37,6 +37,7 @@ steps:
 
 4. Run the Frontend :
 
+steps:
 1. cd frontend
 2. cd 13_Stenz
 3. npm run dev 
