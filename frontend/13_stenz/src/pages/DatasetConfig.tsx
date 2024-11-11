@@ -136,7 +136,7 @@ const DatasetConfig: React.FC = () => {
 
     try {
       const response = await axios.post(
-         ``/choreo-apis/datagen/backend/v1/generate_synthetic_data/``,
+         'http://localhost:8000/api/generate_synthetic_data/',
         { schema, num_rows: numRows },
         {
           responseType: 'blob',
